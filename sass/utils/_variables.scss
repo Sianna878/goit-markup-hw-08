@@ -1,0 +1,47 @@
+:root {
+	--primary-text-color: #757575;
+	--secondary-text-color: #212121;
+	--brand-color: #2196f3;
+	--black-text-color: #000000;
+	--white-text-color: #ffffff;
+	--footer-main-text-color: rgba(255, 255, 255, 0.6);
+
+	--accent-color: #2196f3;
+
+	--primary-bg-color: #ffffff;
+	--secondary-bg-color: #f5f4fa;
+	--hero-bg-color: #c4c4c4;
+	--footer-bg-color: #2f303a;
+	--overlay-bg-color: rgba(33, 150, 243, 0.9);
+	--activity-bg-card-color: rgba(47, 48, 58, 0.8);
+
+	--border-header-color: #ececec;
+	--border-input-modal-color: rgba(33, 33, 33, 0.2);
+	--border-footer-input-color: rgba(255, 255, 255, 0.3);
+	--border-project-color: #eeeeee;
+
+	--btn-color: #2196f3;
+	--btn-accent-color: #188ce8;
+	--btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	--filter-btn-color: #f5f4fa;
+	--filter-btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	
+	--team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	--primary-icon-color: #afb1b8;
+	--secondary-icon-color: #ffffff;
+	--modal-icon-color: #212121;
+
+	--icon-bg-color: #ffffff;
+	--footer-icon-bg-color: rgba(255, 255, 255, 0.1);
+
+	--overlay-bg-color: rgba(33, 150, 243, 0.9);
+	--projects-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
+
+	--modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+	--grad-img: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+
+	--cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}

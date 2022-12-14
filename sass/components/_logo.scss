@@ -1,0 +1,10 @@
+
+// загальні значення логотипу компанії
+
+.logo {
+	font-family: "Raleway", sans-serif;
+
+	@include font(700, 26px, calc(31 / 26), 0.03em);
+		
+	color: var(--brand-color);
+}

@@ -1,0 +1,27 @@
+.filter-set {
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.filter-set__btn {
+	padding: 6px 22px;
+	display: block;
+
+	@include font(500, 16px, calc(26 / 16), 0.03em);
+	
+	text-align: center;
+	color: var(--secondary-text-color);
+	background-color: var(--filter-btn-color);
+	transition: color 250ms var(--cubic), background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+
+	&:hover,
+    &:focus,
+    &--current {
+	color: var(--white-text-color);
+	background-color: var(--accent-color);
+	box-shadow: var(--filter-btn-shadow);
+}
+}

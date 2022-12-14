@@ -1,0 +1,53 @@
+// секція-команда
+
+.page-team {
+	background-color: var(--secondary-bg-color);
+}
+
+.team-member {
+	@media screen and (min-width: 768px) {
+		display: flex;
+	    flex-wrap: wrap;
+	    gap: 30px;
+    }
+	
+}
+
+.team-member__item {
+	margin-bottom: 30px;
+	
+	border-radius: 0px 0px 4px 4px;
+	background-color: var(--primary-bg-color);
+	box-shadow: var(--team-card-shadow);
+
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - 30px) / 2);
+    }
+
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc((100% - 90px) / 4);
+	}
+}
+
+.team-member__content {
+	padding: 30px 32px;
+	text-align: center;
+}
+
+.team-member__name {
+	margin-bottom: 10px;
+	
+	@include font(500, 16px, calc(19 / 16), 0.03em);
+	
+	text-align: center;
+	color: var(--secondary-text-color);
+}
+
+.team-member__pos {
+	margin-bottom: 16px;
+	
+	@include font(null, 16px, calc(19 / 16), 0.03em);
+	
+	text-align: center;
+	color: var(--primary-text-color);
+}

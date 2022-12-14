@@ -1,0 +1,15 @@
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: var(--primary-bg-color);
+	color: var(--primary-text-color);
+}
+
+.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.no-scroll {
+	overflow: hidden;
+}

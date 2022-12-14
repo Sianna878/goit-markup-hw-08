@@ -1,0 +1,134 @@
+// HEADER
+
+.part-header {
+	border-bottom: 1px solid var(--border-header-color);
+}
+
+.part-header__container {
+	display: flex;
+}
+
+// логотип
+
+.logo__part-black {
+	color: var(--black-text-color);
+}
+
+.page-header__logo {
+	padding: 16px 0;
+
+	@include tablet {
+		margin-right: 87px;
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+
+	@include desktop {
+		margin-right: 93px;
+		padding-top: 24px;
+		padding-bottom: 25px;
+	}
+}
+
+// навігація сайту
+
+.part-header__nav {
+	
+	display: none;
+
+	@include tablet {
+		display: block;
+		margin-right: auto;
+	}
+}
+
+.menu {
+	display: flex;
+	gap: 50px;
+}
+
+.menu__link {
+	display: flex;
+	padding: 32px 0;
+}
+
+.menu__link {
+	position: relative;
+
+	@include font(500, 14px, calc(16 / 14), 0.02em);
+
+	color: var(--secondary-text-color);
+	transition: color 250ms var(--cubic);
+
+	&:hover,
+	&:focus,
+	&--current {
+		color: var(--accent-color);
+	}
+
+	&::after,
+	&.menu__link--current::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		width: 100%;
+		height: 4px;
+		display: flex;
+		background-color: var(--accent-color);
+		border-radius: 2px;
+		transform: scaleX(0);
+		transition: transform 250ms var(--cubic);
+	}
+
+	&:hover::after,
+	&:focus::after,
+	&.menu__link--current::after {
+		transform: scaleX(1);
+	}
+}
+
+// контакти власників сайту
+
+.auth-contacts {
+	display: none;
+
+	@include tablet {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	@include desktop {
+		display: flex;
+		flex-direction: row;
+		gap: 50px;
+		align-items: center;
+	}
+}
+
+.auth-contacts__link {
+	@include tablet {
+		@include font(500, 14px, calc(16 / 14), 0.02em);
+
+		color: var(--primary-text-color);
+		align-items: center;
+		transition: color 250ms var(--cubic);
+
+		&:hover,
+		&:focus {
+			color: var(--accent-color);
+		}
+	}
+
+	@include desktop {
+		display: flex;
+		padding: 32px 0;
+	}
+}
+
+.auth-contacts__icon {
+	fill: currentColor;
+	margin-right: 10px;
+}

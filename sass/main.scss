@@ -1,0 +1,25 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './base/common';
+@import './base/reset';
+@import './utils/visually-hidden';
+
+@import './components/section';
+@import './components/container';
+@import './components/logo';
+@import './components/buttons';
+@import './components/soc-networks';
+@import './components/section-title';
+
+@import './layouts/header';
+@import './layouts/page-studio/mobile-menu';
+@import './layouts/page-studio/hero';
+@import './layouts/page-studio/benefits';
+@import './layouts/page-studio/activity';
+@import './layouts/page-studio/team';
+@import './layouts/page-studio/clients';
+@import './layouts/footer';
+@import './layouts/modal';
+
+@import './layouts/page-portfolio/filter';
+@import './layouts/page-portfolio/projects';
