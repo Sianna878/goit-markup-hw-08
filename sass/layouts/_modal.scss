@@ -14,14 +14,26 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 528px;
-	min-height: 581px;
-	padding: 40px;
+	overflow: auto;
+	min-width: 100%;
+	max-height: 550px;
+	padding: 20px;
 	background-color: var(--primary-bg-color);
 	border-radius: 4px;
 	box-shadow: var(--modal-shadow);
 	transform: translate(-50%, -50%) scale(1);
 	transition: transform 700ms var(--cubic);
+
+	@include mobile {
+		min-width: 450px;
+    max-height: 609px;
+    padding: 40px;
+	}
+
+	@include desktop {
+		width: 528px;
+	min-height: 581px;
+	}
 }
 
 .backdrop.is-hidden .modal {
@@ -51,11 +63,17 @@
 
 .modal__title {
 	margin-bottom: 12px;
-
-	@include font(700, 20px, calc(23 / 20), 0.03em);
-	
+	@include font(700, 14px, calc(23 / 14), 0.03em);
 	text-align: center;
 	color: var(--secondary-text-color);
+
+	@include tablet {
+		@include font(700, 20px, calc(30 / 20), 0.03em);
+	}
+
+	@include desktop {
+		@include font(700, 20px, calc(23 / 20), 0.03em);
+	}
 }
 
 // головна форма сайту
@@ -72,9 +90,7 @@
 
 .order-form__label {
 	margin-bottom: 4px;
-
 	@include font(null, 12px, calc(14 / 12), 0.01em);
-	
 	color: var(--primary-text-color);
 }
 
@@ -84,11 +100,8 @@
 
 .order-form__input {
 	width: 100%;
-	
 	@include font(null, 16px, calc(20 / 16), 0.03em);
-	
 	color: var(--black-text-color);
-
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	outline: transparent;
@@ -105,8 +118,12 @@
 }
 
 .order-form__user {
-	height: 40px;
-	padding: 11px 12px 11px 42px;
+	padding: 9px 10px 9px 30px;
+
+	@include mobile {
+		height: 40px;
+		padding: 11px 12px 11px 42px;
+	}
 }
 
 .order-form__icon {
@@ -122,14 +139,20 @@
 }
 
 .order-form__comment {
-	height: 120px;
 	padding: 12px 16px;
 	resize: none;
 
+	@include mobile {
+		height: 120px;
+	}
+
 	&::placeholder {
-		@include font(null, 12px, calc(14 / 12), 0.01em);
-		
+		@include font(null, 14px, calc(16 / 14), 0.01em);
 		color: rgba(117, 117, 117, 0.5);
+
+		@include desktop {
+			@include font(null, 12px, calc(14 / 12), 0.01em);
+		}
 	}
 }
 
@@ -141,10 +164,12 @@
 	align-items: center;
 	justify-content: center;
 	gap: 7px;
-
-	@include font(null, 14px, calc(24 / 14), 0.03em);
-	
+	@include font(null, 12px, calc(14 / 12), 0.03em);
 	color: var(--primary-text-color);
+
+	@include desktop {
+		@include font(null, 14px, calc(24 / 14), 0.03em);
+	}
 }
 
 .policy__icon {
@@ -166,19 +191,35 @@
 
 .policy__link {
 	position: relative;
-
-	@include font(null, 14px, calc(24 / 14), 0.03em);
-		
+	text-decoration: underline;
+	@include font(null, 12px, calc(14 / 12), 0.03em);
 	color: var(--accent-color);
+
+	@include mobile {
+		text-decoration: none;
+	}
+
+	@include desktop {
+		@include font(null, 14px, calc(24 / 14), 0.03em);
+	}
 	
 	&::after {
 		content: " ";
+		display: none;
 		position: absolute;
-		bottom: 5px;
+		bottom: 1px;
 		left: 0;
 		width: 100%;
 		height: 1px;
 		background-color: var(--accent-color);
+
+		@include mobile {
+			display: block;
+		}
+
+		@include desktop {
+			bottom: 5px;
+		}
 	}
 }
 

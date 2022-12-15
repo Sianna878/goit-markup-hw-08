@@ -312,89 +312,100 @@
     <!-- FOOTER OF SITE -->
     <footer class="part-footer">
 			<div class="part-footer__container container">
-				<div class="part-footer__content">
-					<!-- логотип -->
-					<a href="./index.html" class="page-footer__logo logo link" lang="en">Web<span class="logo__part-white">Studio</span> </a>
-					<!-- контакти -->
-					<address class="footer-address">
-						<ul class="auth-address list">
-							<li class="auth-address__item">
+				<div class="footer-inner">
+					<div class="part-footer__address">
+						<!-- логотип -->
+						<a href="./index.html" class="page-footer__logo logo link" lang="en"
+							>Web<span class="logo__part-white">Studio</span>
+						</a>
+						<!-- контакти -->
+						<address class="footer-address">
+							<ul class="auth-address list">
+								<li class="auth-address__item">
+									<a
+										class="auth-address__link link auth-address__link--white"
+										href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+										target="_blank"
+										rel="noopener noreferrer nofollow"
+										>м. Київ, пр-т Лесі Украінки, 26
+									</a>
+								</li>
+								<li class="auth-address__item">
+									<a href="mailto:info@devstudio.com" class="auth-address__link link">info@devstudio.com</a>
+								</li>
+								<li class="auth-address__item">
+									<a href="tel:+380961111111" class="auth-address__link link">+38 096 111 11 11 </a>
+								</li>
+							</ul>
+						</address>
+					</div>
+					<!-- соціальні мережі -->
+					<div class="soc-invite">
+						<span class="soc-invite__title">Приєднуйтесь</span>
+						<ul class="soc-network list">
+							<li class="soc-network__item">
 								<a
-									class="auth-address__link link auth-address__link--white"
-									href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+									class="soc-network__link link soc-network__link--bottom"
+									href="#"
 									target="_blank"
 									rel="noopener noreferrer nofollow"
-									>м. Київ, пр-т Лесі Украінки, 26
+								>
+									<svg class="soc-network__icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-instagram"></use>
+									</svg>
 								</a>
 							</li>
-							<li class="auth-address__item">
-								<a href="mailto:info@devstudio.com" class="auth-address__link link">info@devstudio.com</a>
+							<li class="soc-network__item">
+								<a
+									class="soc-network__link link soc-network__link--bottom"
+									href="#"
+									target="_blank"
+									rel="noopener noreferrer nofollow"
+								>
+									<svg class="soc-network__icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-twitter"></use>
+									</svg>
+								</a>
 							</li>
-							<li class="auth-address__item">
-								<a href="tel:+380961111111" class="auth-address__link link">+38 096 111 11 11 </a>
+							<li class="soc-network__item">
+								<a
+									class="soc-network__link link soc-network__link--bottom"
+									href="#"
+									target="_blank"
+									rel="noopener noreferrer nofollow"
+								>
+									<svg class="soc-network__icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="soc-network__item">
+								<a
+									class="soc-network__link link soc-network__link--bottom"
+									href="#"
+									target="_blank"
+									rel="noopener noreferrer nofollow"
+								>
+									<svg class="soc-network__icon" width="20" height="20">
+										<use href="./images/icons.svg#icon-linkedin"></use>
+									</svg>
+								</a>
 							</li>
 						</ul>
-					</address>
+					</div>
 				</div>
-				<!-- соціальні мережі -->
-				<div class="soc-invite">
-					<span class="soc-invite__title">Приєднуйтесь</span>
-					<ul class="soc-network list">
-						<li class="soc-network__item">
-							<a
-								class="soc-network__link link soc-network__link--bottom"
-								href="#"
-								target="_blank"
-								rel="noopener noreferrer nofollow"
-							>
-								<svg class="soc-network__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="soc-network__item">
-							<a
-								class="soc-network__link link soc-network__link--bottom"
-								href="#"
-								target="_blank"
-								rel="noopener noreferrer nofollow"
-							>
-								<svg class="soc-network__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="soc-network__item">
-							<a
-								class="soc-network__link link soc-network__link--bottom"
-								href="#"
-								target="_blank"
-								rel="noopener noreferrer nofollow"
-							>
-								<svg class="soc-network__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li class="soc-network__item">
-							<a
-								class="soc-network__link link soc-network__link--bottom"
-								href="#"
-								target="_blank"
-								rel="noopener noreferrer nofollow"
-							>
-								<svg class="soc-network__icon" width="20" height="20">
-									<use href="./images/icons.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- форма в footer -->
+				<!--форма в footer -->
 				<div class="subscription">
 					<span class="subscription__title">Підпишіться на розсилку</span>
 					<form class="form-subscription">
-						<input type="email" name="email" class="form-subscription__input" aria-label="Email" placeholder="E-mail" required />
+						<input
+							type="email"
+							name="email"
+							class="form-subscription__input"
+							aria-label="Email"
+							placeholder="E-mail"
+							required
+						/>
 						<button type="submit" class="subscribe-btn button"
 							>Підписатися
 							<svg class="form-subscription__icon" width="24" height="24">

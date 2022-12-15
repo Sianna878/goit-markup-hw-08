@@ -3,8 +3,10 @@
 
 .logo {
 	font-family: "Raleway", sans-serif;
-
-	@include font(700, 26px, calc(31 / 26), 0.03em);
-		
+	@include font(700, 24px, calc(28 / 24), 0.03em);
 	color: var(--brand-color);
+
+	@include desktop {
+		@include font(700, 26px, calc(31 / 26), 0.03em);
+	}
 }

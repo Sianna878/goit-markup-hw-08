@@ -13,6 +13,7 @@
     }
 
 	@include mobile {
+		max-width: 768px;
 		background-image: var(--grad-img), url(../images/hero-bg-tab.jpg);
 		@include retina {
         background-image: var(--grad-img), url(../images/hero-bg-tab-2x.jpg);
@@ -20,7 +21,7 @@
 	}
 
 	@include tablet {
-		max-width: 768px;
+		max-width: 1200px;
 		background-image: var(--grad-img), url(../images/hero-bg-desk.jpg);
 		@include retina {
         background-image: var(--grad-img), url(../images/hero-bg-desk-2x.jpg);
@@ -50,10 +51,6 @@
 		
 	text-transform: uppercase;
 	color: var(--white-text-color);
-
-	@include tablet {
-		
-	}
 
 	@include desktop {
 		max-width: 696px;

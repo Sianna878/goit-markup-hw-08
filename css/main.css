@@ -139,10 +139,18 @@ address {
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
+  font-size: 24px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--brand-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923076923;
+    letter-spacing: 0.03em;
+  }
 }
 
 .hero-btn, .subscribe-btn, .order-btn {
@@ -224,6 +232,8 @@ address {
 
 .part-header__container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo__part-black {
@@ -236,8 +246,8 @@ address {
 @media screen and (min-width: 768px) {
   .page-header__logo {
     margin-right: 87px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -356,11 +366,16 @@ address {
 }
 .mobile-menu__container {
   height: 100%;
-  padding-left: 40px;
+  padding-left: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+}
+@media screen and (min-width: 480px) {
+  .mobile-menu {
+    padding-left: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -368,7 +383,30 @@ address {
   }
 }
 
-.mobile-btn-menu,
+.mobile-btn-menu {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mobile-btn-menu:focus {
+  fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .mobile-btn-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-btn-menu:hover {
+    fill: var(--accent-color);
+  }
+}
+
 .mobile-btn-close {
   position: absolute;
   top: 10px;
@@ -379,19 +417,21 @@ address {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  border: transparent;
+  border: none;
   cursor: pointer;
   transition: fill 250ms var(--cubic);
 }
-.mobile-btn-menu:hover, .mobile-btn-menu:focus,
-.mobile-btn-close:hover,
 .mobile-btn-close:focus {
   fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
-  .mobile-btn-menu,
-.mobile-btn-close {
+  .mobile-btn-close {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mobile-btn-close:hover {
+    fill: var(--accent-color);
   }
 }
 
@@ -420,15 +460,14 @@ address {
 
 .mobile-contacts__tel {
   font-weight: 500;
-  font-size: 30px;
-  line-height: 1.3333333333;
+  font-size: 33px;
+  line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: var(--brand-color);
 }
 @media screen and (min-width: 480px) {
   .mobile-contacts__tel {
     font-size: 34px;
-    line-height: 1.1764705882;
   }
 }
 
@@ -447,15 +486,14 @@ address {
 
 .mobile-soc__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.5714285714;
+  font-size: 16px;
+  line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: var(--brand-color);
 }
 @media screen and (min-width: 480px) {
   .mobile-soc__link {
     font-size: 18px;
-    line-height: 1.2222222222;
   }
 }
 
@@ -486,6 +524,7 @@ address {
 }
 @media screen and (min-width: 480px) {
   .page-hero {
+    max-width: 768px;
     background-image: var(--grad-img), url(../images/hero-bg-tab.jpg);
   }
 }
@@ -496,7 +535,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .page-hero {
-    max-width: 768px;
+    max-width: 1200px;
     background-image: var(--grad-img), url(../images/hero-bg-desk.jpg);
   }
 }
@@ -963,14 +1002,28 @@ address {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
-  padding: 40px;
+  overflow: auto;
+  min-width: 100%;
+  max-height: 550px;
+  padding: 20px;
   background-color: var(--primary-bg-color);
   border-radius: 4px;
   box-shadow: var(--modal-shadow);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 700ms var(--cubic);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    min-width: 450px;
+    max-height: 609px;
+    padding: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -999,11 +1052,27 @@ address {
 .modal__title {
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  font-size: 14px;
+  line-height: 1.6428571429;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+  }
 }
 
 .order-form__field {
@@ -1052,8 +1121,13 @@ address {
 }
 
 .order-form__user {
-  height: 40px;
-  padding: 11px 12px 11px 42px;
+  padding: 9px 10px 9px 30px;
+}
+@media screen and (min-width: 480px) {
+  .order-form__user {
+    height: 40px;
+    padding: 11px 12px 11px 42px;
+  }
 }
 
 .order-form__icon {
@@ -1068,27 +1142,48 @@ address {
 }
 
 .order-form__comment {
-  height: 120px;
   padding: 12px 16px;
   resize: none;
 }
+@media screen and (min-width: 480px) {
+  .order-form__comment {
+    height: 120px;
+  }
+}
 .order-form__comment::-moz-placeholder {
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .order-form__comment:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 .order-form__comment::placeholder {
-  font-size: 12px;
-  line-height: 1.1666666667;
+  font-size: 14px;
+  line-height: 1.1428571429;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 1200px) {
+  .order-form__comment::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.01em;
+  }
+  .order-form__comment:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.01em;
+  }
+  .order-form__comment::placeholder {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.01em;
+  }
 }
 
 .policy {
@@ -1097,10 +1192,17 @@ address {
   align-items: center;
   justify-content: center;
   gap: 7px;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .policy {
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+  }
 }
 
 .policy__icon {
@@ -1119,19 +1221,43 @@ address {
 
 .policy__link {
   position: relative;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  text-decoration: underline;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+@media screen and (min-width: 480px) {
+  .policy__link {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .policy__link {
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+  }
+}
 .policy__link::after {
   content: " ";
+  display: none;
   position: absolute;
-  bottom: 5px;
+  bottom: 1px;
   left: 0;
   width: 100%;
   height: 1px;
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .policy__link::after {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .policy__link::after {
+    bottom: 5px;
+  }
 }
 
 .order-form__btn-wrap {

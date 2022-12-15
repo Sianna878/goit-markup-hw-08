@@ -9,7 +9,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	
 
 	@media screen and (min-width: 768px) {
 		align-items: baseline;
@@ -23,13 +22,13 @@
 
 .footer-inner {
 	display: flex;
-  flex-direction: column;
-  gap: 60px;
-  margin-bottom: 60px;
-  justify-content: center;
-  align-items: center;
+	flex-direction: column;
+	gap: 60px;
+	margin-bottom: 60px;
+	justify-content: center;
+	align-items: center;
 
-    @media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 		flex-direction: row;
 		text-align: left;
 		gap: 165px;
@@ -39,7 +38,7 @@
 	@media screen and (min-width: 1200px) {
 		gap: 70px;
 		margin-right: 93px;
-    	margin-bottom: 0;
+		margin-bottom: 0;
 	}
 }
 
@@ -115,8 +114,7 @@
 	align-items: center;
 	justify-content: center;
 
-    @media screen and (min-width: 768px) {
-		
+	@media screen and (min-width: 768px) {
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -148,12 +146,11 @@
 	align-items: center;
 
 	@media screen and (min-width: 768px) {
-		
 	}
 
 	@media screen and (min-width: 1200px) {
 		align-items: flex-start;
-}
+	}
 }
 
 .subscription__title {
