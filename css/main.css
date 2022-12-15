@@ -65,7 +65,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 address {
@@ -507,7 +506,6 @@ address {
 }
 
 .page-hero {
-  max-width: 480px;
   height: 400px;
   padding: 118px 0;
   margin: 0 auto;
@@ -524,7 +522,6 @@ address {
 }
 @media screen and (min-width: 480px) {
   .page-hero {
-    max-width: 768px;
     background-image: var(--grad-img), url(../images/hero-bg-tab.jpg);
   }
 }
@@ -535,7 +532,6 @@ address {
 }
 @media screen and (min-width: 768px) {
   .page-hero {
-    max-width: 1200px;
     background-image: var(--grad-img), url(../images/hero-bg-desk.jpg);
   }
 }
@@ -609,11 +605,17 @@ address {
 
 .benefits__title {
   margin-bottom: 10px;
+  text-align: center;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+}
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: start;
+  }
 }
 
 .benefits__text {
