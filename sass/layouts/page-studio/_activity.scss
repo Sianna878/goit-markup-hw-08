@@ -2,6 +2,10 @@
 .page-activity {
 	padding-top: 0;
 	display: none;
+
+	@include desktop {
+		display: block;
+	}
 }
 
 .activity {
@@ -34,3 +38,4 @@
 	text-transform: uppercase;
 	color: var(--white-text-color);
 }
+

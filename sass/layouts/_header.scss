@@ -35,7 +35,6 @@
 // навігація сайту
 
 .part-header__nav {
-	
 	display: none;
 
 	@include tablet {
@@ -56,9 +55,7 @@
 
 .menu__link {
 	position: relative;
-
 	@include font(500, 14px, calc(16 / 14), 0.02em);
-
 	color: var(--secondary-text-color);
 	transition: color 250ms var(--cubic);
 
@@ -105,17 +102,17 @@
 	@include desktop {
 		display: flex;
 		flex-direction: row;
-		gap: 50px;
 		align-items: center;
+		gap: 50px;
 	}
 }
 
 .auth-contacts__link {
 	@include tablet {
-		@include font(500, 14px, calc(16 / 14), 0.02em);
-
-		color: var(--primary-text-color);
+		display:inline-flex;
 		align-items: center;
+		@include font(500, 14px, calc(16 / 14), 0.02em);
+		color: var(--primary-text-color);
 		transition: color 250ms var(--cubic);
 
 		&:hover,
@@ -125,12 +122,26 @@
 	}
 
 	@include desktop {
-		display: flex;
 		padding: 32px 0;
 	}
 }
 
-.auth-contacts__icon {
+.auth-contacts__icon-mail,
+.auth-contacts__icon-tel {
 	fill: currentColor;
 	margin-right: 10px;
+}
+
+.auth-contacts__icon-mail {
+	@include tablet {
+		width: 14px;
+	    height: 10px;
+	}
+}
+
+.auth-contacts__icon-tel {
+	@include tablet {
+		width: 10px;
+	    height: 14px;
+	}
 }

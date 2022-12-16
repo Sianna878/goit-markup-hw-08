@@ -321,19 +321,20 @@ address {
   .auth-contacts {
     display: flex;
     flex-direction: row;
-    gap: 50px;
     align-items: center;
+    gap: 50px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .auth-contacts__link {
+    display: inline-flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1428571429;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
-    align-items: center;
     transition: color 250ms var(--cubic);
   }
   .auth-contacts__link:hover, .auth-contacts__link:focus {
@@ -342,14 +343,28 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .auth-contacts__link {
-    display: flex;
     padding: 32px 0;
   }
 }
 
-.auth-contacts__icon {
+.auth-contacts__icon-mail,
+.auth-contacts__icon-tel {
   fill: currentColor;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .auth-contacts__icon-mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .auth-contacts__icon-tel {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .mobile-menu {
@@ -426,11 +441,6 @@ address {
 @media screen and (min-width: 768px) {
   .mobile-btn-close {
     display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .mobile-btn-close:hover {
-    fill: var(--accent-color);
   }
 }
 
@@ -629,6 +639,11 @@ address {
   padding-top: 0;
   display: none;
 }
+@media screen and (min-width: 1200px) {
+  .page-activity {
+    display: block;
+  }
+}
 
 .activity {
   display: flex;
@@ -682,6 +697,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .team-member__item {
+    margin-bottom: 0;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
