@@ -18,7 +18,9 @@
 }
 
 .project {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 	transition: box-shadow 250ms var(--cubic);
 
 	&:hover,
@@ -55,6 +57,7 @@
 	padding: 20px 24px;
 	border: 1px solid var(--border-project-color);
 	border-top: 0;
+	flex-grow: 1;
 }
 
 .project__title {

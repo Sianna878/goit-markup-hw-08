@@ -10,7 +10,6 @@
 	    flex-wrap: wrap;
 	    gap: 30px;
     }
-	
 }
 
 .team-member__item {
@@ -24,9 +23,10 @@
 
 	@include tablet {
 		flex-basis: calc((100% - 30px) / 2);
+
 		&:not(:last-child) {
 		margin-bottom: 0px;
-	}
+	   }
     }
 
 	@include desktop {
