@@ -44,12 +44,6 @@
 	@include tablet {
 		display: none;
 	}
-
-	@include desktop {
-		&:hover {
-		fill: var(--accent-color);
-	}
-    }
 }
 
 .mobile-btn-close {
@@ -80,10 +74,7 @@
 }
 
 .mobile-nav__link {
-	font-weight: 500;
-	font-size: 40px;
-	line-height: calc(48 / 40);
-	letter-spacing: 0.02em;
+	@include font(500, 40px, calc(48 / 40), 0.02em);
 	color: var(--secondary-text-color);
 
 	&:hover,
@@ -102,10 +93,7 @@
 }
 
 .mobile-contacts__tel {
-	font-weight: 500;
-	font-size: 33px;
-	line-height: calc(40 / 34);
-	letter-spacing: 0.02em;
+	@include font(500, 33px, calc(40 / 34), 0.02em);
 	color: var(--brand-color);
 
 	@include mobile {
@@ -114,12 +102,7 @@
 }
 
 // .mobile-contacts__tel {
-    
-//     font-weight: 500;
-//     font-size: 34px;
-//     line-height: calc(40 / 34);
-//     letter-spacing: 0.02em;
-
+// @include font(500, 34px, calc(40 / 34), 0.02em);
 // 	color: var(--brand-color); 
 
 // 	@media screen and (max-width: 380px) {
@@ -129,10 +112,7 @@
 // }
 
 .mobile-contacts__mail {
-	font-weight: 500;
-	font-size: 24px;
-	line-height: calc(28 / 24);
-	letter-spacing: 0.02em;
+	@include font(500, 24px, calc(28 / 24), 0.02em);
 	color: var(--primary-text-color);
 }
 
@@ -142,10 +122,7 @@
 }
 
 .mobile-soc__link {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: calc(22 / 18);
-	letter-spacing: 0.02em;
+	@include font(500, 16px, calc(22 / 18), 0.02em);
 	color: var(--brand-color);
 
 	@include mobile {

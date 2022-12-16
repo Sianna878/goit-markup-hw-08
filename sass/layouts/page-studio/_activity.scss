@@ -31,9 +31,7 @@
 }
 
 .activity__item-title {
-
 	@include font(700, 14px, calc(16 / 14), 0.03em);
-		
 	text-align: center;
 	text-transform: uppercase;
 	color: var(--white-text-color);
