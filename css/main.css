@@ -1217,7 +1217,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 5px;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
@@ -1225,6 +1225,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .policy {
+    gap: 7px;
     font-size: 14px;
     line-height: 1.7142857143;
     letter-spacing: 0.03em;

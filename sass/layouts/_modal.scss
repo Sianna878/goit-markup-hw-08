@@ -162,12 +162,13 @@
 	margin-bottom: 30px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: 7px;
+	justify-content:center;
+	gap: 5px;
 	@include font(null, 12px, calc(14 / 12), 0.03em);
 	color: var(--primary-text-color);
 
 	@include desktop {
+		gap: 7px;
 		@include font(null, 14px, calc(24 / 14), 0.03em);
 	}
 }
