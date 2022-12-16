@@ -23,8 +23,10 @@
 	}
 
 	@include tablet {
-		margin-bottom: 0;
 		flex-basis: calc((100% - 30px) / 2);
+		&:not(:last-child) {
+		margin-bottom: 0px;
+	}
     }
 
 	@include desktop {

@@ -709,8 +709,10 @@ address {
 }
 @media screen and (min-width: 768px) {
   .team-member__item {
-    margin-bottom: 0;
     flex-basis: calc((100% - 30px) / 2);
+  }
+  .team-member__item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1031,7 +1033,7 @@ address {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 100px;
   left: 50%;
   overflow: auto;
   min-width: 100%;
@@ -1040,7 +1042,7 @@ address {
   background-color: var(--primary-bg-color);
   border-radius: 4px;
   box-shadow: var(--modal-shadow);
-  transform: translate(-50%, -50%) scale(1);
+  transform: translateX(-50%) scale(1);
   transition: transform 700ms var(--cubic);
 }
 @media screen and (min-width: 480px) {
