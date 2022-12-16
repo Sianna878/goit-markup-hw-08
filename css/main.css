@@ -1081,15 +1081,15 @@ address {
 }
 
 .modal__title {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.6428571429;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--secondary-text-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal__title {
     font-weight: 700;
     font-size: 20px;
@@ -1222,7 +1222,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 7px;
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
@@ -1230,7 +1230,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .policy {
-    gap: 7px;
     font-size: 14px;
     line-height: 1.7142857143;
     letter-spacing: 0.03em;
