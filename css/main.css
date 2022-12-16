@@ -65,6 +65,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 address {
@@ -347,16 +348,19 @@ address {
   }
 }
 
-.auth-contacts__icon-mail,
-.auth-contacts__icon-tel {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
 @media screen and (min-width: 768px) {
   .auth-contacts__icon-mail {
     width: 14px;
     height: 10px;
+    fill: currentColor;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-contacts__icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
   }
 }
 
@@ -364,6 +368,15 @@ address {
   .auth-contacts__icon-tel {
     width: 10px;
     height: 14px;
+    fill: currentColor;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-contacts__icon-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
   }
 }
 
@@ -1284,11 +1297,27 @@ address {
 }
 
 .filter-set {
-  margin-bottom: 50px;
+  max-width: 326px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .filter-set {
+    max-width: 100%;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-set {
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .filter-set__btn {
@@ -1308,7 +1337,6 @@ address {
   background-color: var(--accent-color);
   box-shadow: var(--filter-btn-shadow);
 }
-
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -1316,7 +1344,17 @@ address {
 }
 
 .card-set__item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: 100%;
+}
+@media screen and (min-width: 768px) {
+  .card-set__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .project {

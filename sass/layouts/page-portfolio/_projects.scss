@@ -5,7 +5,16 @@
 }
 
 .card-set__item {
-	width: calc((100% - 60px) / 3);
+	flex-basis: 100%;
+
+	@include tablet {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+
+	@include desktop {
+		flex-basis: calc((100% - 60px) / 3);
+	}
+	
 }
 
 .project {

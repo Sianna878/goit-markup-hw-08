@@ -109,7 +109,7 @@
 
 .auth-contacts__link {
 	@include tablet {
-		display:inline-flex;
+		display: inline-flex;
 		align-items: center;
 		@include font(500, 14px, calc(16 / 14), 0.02em);
 		color: var(--primary-text-color);
@@ -126,22 +126,32 @@
 	}
 }
 
-.auth-contacts__icon-mail,
-.auth-contacts__icon-tel {
-	fill: currentColor;
-	margin-right: 10px;
-}
-
 .auth-contacts__icon-mail {
 	@include tablet {
 		width: 14px;
-	    height: 10px;
+		height: 10px;
+		fill: currentColor;
+		margin-right: 8px;
+	}
+
+	@include desktop {
+		width: 16px;
+		height: 12px;
+		margin-right: 10px;
 	}
 }
 
 .auth-contacts__icon-tel {
 	@include tablet {
 		width: 10px;
-	    height: 14px;
+		height: 14px;
+		fill: currentColor;
+		margin-right: 8px;
+	}
+
+	@include desktop {
+		width: 10px;
+		height: 16px;
+		margin-right: 10px;
 	}
 }

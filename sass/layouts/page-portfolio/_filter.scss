@@ -1,9 +1,23 @@
 .filter-set {
-	margin-bottom: 50px;
+	max-width: 326px;
+	margin-bottom: 40px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	gap: 8px;
+	flex-wrap: wrap;
+
+	@include tablet {
+		max-width: 100%;
+		margin-bottom: 30px;
+		flex-wrap: nowrap;
+		justify-content: center;
+	    align-items: center;
+	}
+
+	@include desktop {
+		margin-bottom: 50px;
+		justify-content: center;
+	    align-items: center;
+	}
 }
 
 .filter-set__btn {
@@ -11,7 +25,6 @@
 	display: block;
 
 	@include font(500, 16px, calc(26 / 16), 0.03em);
-	
 	text-align: center;
 	color: var(--secondary-text-color);
 	background-color: var(--filter-btn-color);
@@ -23,5 +36,9 @@
 	color: var(--white-text-color);
 	background-color: var(--accent-color);
 	box-shadow: var(--filter-btn-shadow);
-}
+    }
+
+	@include tablet {
+
+	}
 }
