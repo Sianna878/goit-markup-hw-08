@@ -3,14 +3,11 @@
 .hero-btn, .subscribe-btn, .order-btn {
 	width: 200px;
 	height: 50px;
-
 	@include font(700, 16px, calc(30 / 16), 0.06em);
-	
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	
 	color: var(--white-text-color);
 	background-color: var(--btn-color);
 	box-shadow: var(--btn-shadow);

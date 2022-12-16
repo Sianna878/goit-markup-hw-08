@@ -23,7 +23,6 @@
 .filter-set__btn {
 	padding: 6px 22px;
 	display: block;
-
 	@include font(500, 16px, calc(26 / 16), 0.03em);
 	text-align: center;
 	color: var(--secondary-text-color);

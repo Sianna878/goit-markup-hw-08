@@ -36,6 +36,7 @@
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
+	transition: fill 250ms var(--cubic);
 
 	&:focus {
 		fill: var(--accent-color);
@@ -76,8 +77,8 @@
 .mobile-nav__link {
 	@include font(500, 40px, calc(48 / 40), 0.02em);
 	color: var(--secondary-text-color);
+	transition: color 250ms var(--cubic);
 
-	&:hover,
 	&:focus,
 	&--current {
 		color: var(--accent-color);

@@ -5,7 +5,7 @@
 }
 
 .team-member {
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		display: flex;
 	    flex-wrap: wrap;
 	    gap: 30px;
@@ -19,12 +19,12 @@
 	background-color: var(--primary-bg-color);
 	box-shadow: var(--team-card-shadow);
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		margin-bottom: 0;
 		flex-basis: calc((100% - 30px) / 2);
     }
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		flex-basis: calc((100% - 90px) / 4);
 	}
 }

@@ -10,11 +10,11 @@
 	flex-wrap: wrap;
 	justify-content: center;
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		align-items: baseline;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		flex-wrap: nowrap;
 		justify-content: space-between;
 	}
@@ -28,14 +28,14 @@
 	justify-content: center;
 	align-items: center;
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		flex-direction: row;
 		text-align: left;
 		gap: 165px;
 		align-items: baseline;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		gap: 70px;
 		margin-right: 93px;
 		margin-bottom: 0;
@@ -45,11 +45,11 @@
 .part-footer__address {
 	text-align: center;
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		text-align: center;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		width: 231px;
 		text-align: left;
 	}
@@ -59,11 +59,11 @@
 	display: block;
 	margin-bottom: 28px;
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		margin-bottom: 20px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 	}
 }
 
@@ -80,11 +80,11 @@
 	justify-content: center;
 	gap: 12px;
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		gap: 8px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		align-items: flex-start;
 		gap: 9px;
 	}
@@ -113,10 +113,10 @@
 	align-items: center;
 	justify-content: center;
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		align-items: flex-start;
 	}
 }
@@ -142,10 +142,10 @@
 	justify-content: center;
 	align-items: center;
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		align-items: flex-start;
 	}
 }
@@ -166,10 +166,10 @@
 	align-items: center;
 	gap: 20px;
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		flex-direction: row;
 		gap: 12px;
 	}
@@ -191,7 +191,6 @@
 
 	&::placeholder {
 		@include font(null, 16px, calc(20 / 16), 0.03em);
-
 		align-items: center;
 		color: rgba(255, 255, 255, 0.6);
 	}
@@ -201,11 +200,11 @@
 		border-color: var(--accent-color);
 	}
 
-	@media screen and (min-width: 768px) {
+	@include tablet {
 		max-width: 450px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop {
 		margin-bottom: 0;
 		max-width: 358px;
 	}

@@ -33,7 +33,6 @@
 	@include font(null, 14px, calc(16 / 14), 0.03em);
 	text-transform: uppercase;
 	color: var(--secondary-text-color);
-
 	@include tablet {
 		text-align: start;
     }

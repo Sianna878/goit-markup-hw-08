@@ -419,6 +419,7 @@ address {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: fill 250ms var(--cubic);
 }
 .mobile-btn-menu:focus {
   fill: var(--accent-color);
@@ -462,8 +463,9 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  transition: color 250ms var(--cubic);
 }
-.mobile-nav__link:hover, .mobile-nav__link:focus, .mobile-nav__link--current {
+.mobile-nav__link:focus, .mobile-nav__link--current {
   color: var(--accent-color);
 }
 

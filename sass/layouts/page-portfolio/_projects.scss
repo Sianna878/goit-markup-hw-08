@@ -39,9 +39,7 @@
 	width: 100%;
 	height: 100%;
 	padding: 63px 24px;
-
 	@include font(null, 18px, calc(28 / 18), 0.03em);
-
 	color: var(--white-text-color);
 	background-color: var(--overlay-bg-color);
 	transform: translateY(100%);
@@ -61,15 +59,12 @@
 
 .project__title {
 	margin-bottom: 4px;
-
 	@include font(null, 18px, calc(36 / 18), 0.06em);
-	
+
 	color: var(--secondary-text-color);
 }
 
 .project__type {
-
 	@include font(null, 16px, calc(30 / 16), 0.03em);
-		
 	color: var(--primary-text-color);
 }
