@@ -62,9 +62,6 @@
 	@include tablet {
 		margin-bottom: 20px;
 	}
-
-	@include desktop {
-	}
 }
 
 .logo__part-white {
@@ -113,9 +110,6 @@
 	align-items: center;
 	justify-content: center;
 
-	@include tablet {
-	}
-
 	@include desktop {
 		align-items: flex-start;
 	}
@@ -142,9 +136,6 @@
 	justify-content: center;
 	align-items: center;
 
-	@include tablet {
-	}
-
 	@include desktop {
 		align-items: flex-start;
 	}
@@ -165,9 +156,6 @@
 	justify-content: center;
 	align-items: center;
 	gap: 20px;
-
-	@include tablet {
-	}
 
 	@include desktop {
 		flex-direction: row;

@@ -700,10 +700,12 @@ address {
 }
 
 .team-member__item {
-  margin-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-bg-color);
   box-shadow: var(--team-card-shadow);
+}
+.team-member__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .team-member__item {
@@ -855,6 +857,7 @@ address {
     margin-bottom: 20px;
   }
 }
+
 .logo__part-white {
   color: var(--white-text-color);
 }
@@ -1313,8 +1316,6 @@ address {
 @media screen and (min-width: 1200px) {
   .filter-set {
     margin-bottom: 50px;
-    justify-content: center;
-    align-items: center;
   }
 }
 
@@ -1335,6 +1336,7 @@ address {
   background-color: var(--accent-color);
   box-shadow: var(--filter-btn-shadow);
 }
+
 .card-set {
   display: flex;
   flex-wrap: wrap;

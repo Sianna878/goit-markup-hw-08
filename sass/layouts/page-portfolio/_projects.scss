@@ -60,7 +60,6 @@
 .project__title {
 	margin-bottom: 4px;
 	@include font(null, 18px, calc(36 / 18), 0.06em);
-
 	color: var(--secondary-text-color);
 }
 

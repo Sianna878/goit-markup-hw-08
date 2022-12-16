@@ -14,10 +14,13 @@
 }
 
 .team-member__item {
-	margin-bottom: 30px;
 	border-radius: 0px 0px 4px 4px;
 	background-color: var(--primary-bg-color);
 	box-shadow: var(--team-card-shadow);
+
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
 
 	@include tablet {
 		margin-bottom: 0;

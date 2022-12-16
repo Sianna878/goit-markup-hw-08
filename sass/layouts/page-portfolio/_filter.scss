@@ -15,8 +15,6 @@
 
 	@include desktop {
 		margin-bottom: 50px;
-		justify-content: center;
-	    align-items: center;
 	}
 }
 
@@ -36,8 +34,4 @@
 	background-color: var(--accent-color);
 	box-shadow: var(--filter-btn-shadow);
     }
-
-	@include tablet {
-
-	}
 }

@@ -14,13 +14,10 @@
 .soc-network__link {
 	width: 100%;
 	height: 100%;
-
     display: flex;
 	justify-content: center;
 	align-items: center;
-	
 	border-radius: 50%;
-    
 	color: var(--primary-icon-color);
 	transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
     
