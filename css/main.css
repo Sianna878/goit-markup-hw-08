@@ -1036,7 +1036,7 @@ address {
   overflow: auto;
   min-width: 100%;
   max-height: 550px;
-  padding: 20px;
+  padding: 25px;
   background-color: var(--primary-bg-color);
   border-radius: 4px;
   box-shadow: var(--modal-shadow);
@@ -1081,9 +1081,11 @@ address {
 }
 
 .modal__title {
+  min-width: 300px;
+  margin: 0 auto;
   margin-bottom: 8px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
@@ -1091,6 +1093,7 @@ address {
 }
 @media screen and (min-width: 480px) {
   .modal__title {
+    min-width: 370px;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -1100,6 +1103,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .modal__title {
+    min-width: 448px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -1182,23 +1186,25 @@ address {
     height: 120px;
   }
 }
-.order-form__comment::-moz-placeholder {
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.order-form__comment:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-.order-form__comment::placeholder {
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+@media screen and (min-width: 480px) {
+  .order-form__comment::-moz-placeholder {
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .order-form__comment:-ms-input-placeholder {
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .order-form__comment::placeholder {
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 @media screen and (min-width: 1200px) {
   .order-form__comment::-moz-placeholder {
@@ -1219,18 +1225,28 @@ address {
 }
 
 .policy {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
-  font-size: 12px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  gap: 8px;
+}
+@media screen and (min-width: 480px) {
+  .policy {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .policy__text {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
 }
 @media screen and (min-width: 1200px) {
-  .policy {
+  .policy__text {
     font-size: 14px;
     line-height: 1.7142857143;
     letter-spacing: 0.03em;
@@ -1273,23 +1289,12 @@ address {
 }
 .policy__link::after {
   content: " ";
-  display: none;
   position: absolute;
   bottom: 1px;
   left: 0;
   width: 100%;
   height: 1px;
   background-color: var(--accent-color);
-}
-@media screen and (min-width: 480px) {
-  .policy__link::after {
-    display: block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .policy__link::after {
-    bottom: 5px;
-  }
 }
 
 .order-form__btn-wrap {
