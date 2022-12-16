@@ -62,17 +62,16 @@
 }
 
 .modal__title {
-	// width: 300px;
 	margin-bottom: 8px;
 	@include font(700, 16px, calc(30 / 20), 0.03em);
 	text-align: center;
 	color: var(--secondary-text-color);
 
 	@include mobile {
+		margin-bottom: 12px;
 		@include font(700, 20px, calc(30 / 20), 0.03em);
 	}
 
-	
 	@include desktop {
 		@include font(700, 20px, calc(23 / 20), 0.03em);
 	}
