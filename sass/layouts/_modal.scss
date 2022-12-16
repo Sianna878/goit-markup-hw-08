@@ -1,6 +1,7 @@
 .backdrop {
 	position: fixed;
 	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	opacity: 1;
@@ -12,7 +13,7 @@
 
 .modal {
 	position: absolute;
-	top: 100px;
+	top: 50%;
 	left: 50%;
 	overflow: auto;
 	min-width: 100%;
@@ -21,8 +22,12 @@
 	background-color: var(--primary-bg-color);
 	border-radius: 4px;
 	box-shadow: var(--modal-shadow);
-	transform: translateX(-50%) scale(1);
+	transform: translate(-50%, -50%) scale(1);
 	transition: transform 700ms var(--cubic);
+
+	.backdrop.is-hidden & {
+	transform: translate(-50%, -50%) scale(1.5);
+}
 
 	@include mobile {
 		min-width: 450px;
@@ -34,10 +39,6 @@
 		width: 528px;
 	    min-height: 581px;
 	}
-}
-
-.backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(1.5);
 }
 
 .modal__btn-close {
